@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import {Container, Row, Col, ProgressBar} from 'react-bootstrap';
 import axios from 'axios';
-
+import {useNavigate} from 'react-router-dom';
 
 let downloadTimer = null;
 let quoteTimer = null;
@@ -12,8 +12,11 @@ const BreathingHome = (prop) => {
     const [p, setP] = useState(progress); //progress green bar
     const [nonP, setNonP] = useState(100); //non progress red bar in progress bar
     const [quote, setQuote] = useState({});
+    const nav = useNavigate();
 
-
+    const returnHome = () => {
+        nav('/');
+    };
 
 
     //main game tick timer
@@ -149,7 +152,7 @@ const BreathingHome = (prop) => {
                 <Row>
                     <Col>
                         <h1 id="breathLabel">{label}</h1>
-                        <button id="menuBtn" type="button" className="btn btn-outline-success hidden">Return to Game Area</button>
+                        <button id="menuBtn" type="button" onClick={() => returnHome()} className="btn btn-outline-success hidden">Return to Game Area</button>
                         <h2 id="seconds">{seconds}</h2>
                     </Col>
                 </Row>

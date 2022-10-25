@@ -58,7 +58,7 @@ code {
 #breathLabel {
   font-weight: bold;
   font-size: 2.3em;
-  font-family: cursive;
+  font-family: Garamond, serif;
 }
 .hidden {
   display: none;
@@ -72,5 +72,5 @@ code {
 }
 
 #gameArea {
-  font-family: cursive;
+  font-family: Garamond, serif;
 }
