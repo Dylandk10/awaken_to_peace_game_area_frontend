@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import {Container, Row, Col, ProgressBar} from 'react-bootstrap';
 import axios from 'axios';
 
+
 let downloadTimer = null;
 let quoteTimer = null;
 const BreathingHome = (prop) => { 
@@ -56,7 +57,7 @@ const BreathingHome = (prop) => {
                     //3rd stage grab a new quote and reset the stage back to 0 so when we call it below its stage+1
                     if(stage >= 3) {
                         stage = 0;
-                        axios.get("http://localhost:8080/gameRoute/getSingleRandomQuote")
+                        axios.get(process.env.REACT_APP_BASE_URL+"/gameRoute/getSingleRandomQuote")
                         .then((response) => {
                             setQuote(response.data);
                         });
@@ -122,7 +123,7 @@ const BreathingHome = (prop) => {
 
     const getQuote = async () => {
         //set the inital quote
-        const response = await axios.get("http://localhost:8080/gameRoute/getSingleRandomQuote");
+        const response = await axios.get(process.env.REACT_APP_BASE_URL + "/gameRoute/getSingleRandomQuote");
         setQuote(response.data);
     };
 
