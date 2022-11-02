@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route} from "react-router-dom";
 import ResponsiveAppBar from './components/ResponsiveNavBar';
 import Home from './components/Home';
 import BreathingHome from './components/BreathingHome';
+import QuoteGameHome from './components/QuoteGameHome';
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/breathing-app' element={<BreathingHome />} />
+          <Route path='quote-game' element={<QuoteGameHome />} />
         </Routes>
       </BrowserRouter>
     </div>

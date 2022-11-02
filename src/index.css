@@ -24,6 +24,11 @@ code {
   text-align: center;
   max-width: 550px;
 }
+#quoteGameContainer {
+  padding-top: 5em;
+  text-align: center;
+  max-width: 550px;
+}
 
 #homeButton {
   text-decoration: none;
@@ -73,4 +78,30 @@ code {
 
 #gameArea {
   font-family: Garamond, serif;
+}
+
+.options {
+  padding: 10px;
+  display: block;
+}
+
+.optionBtn {
+  min-width: 100%;
+  padding: .5em;
+}
+
+.optionBtnActive {
+  background-color: blue;
+  min-width: 100%;
+}
+
+#errorMessage {
+  color: red;
+  display: none;
+  visibility:hidden;
+}
+
+#quoteGameGameOver {
+  display: none;
+  visibility: hidden;
 }

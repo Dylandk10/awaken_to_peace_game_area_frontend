@@ -14,6 +14,9 @@ const Home = (prop) => {
             case 1:
                 nav('/breathing-app');
                 break;
+            case 2:
+                nav('/quote-game');
+                break;
         }
     }
 
@@ -47,6 +50,19 @@ const Home = (prop) => {
                                 Breathe in for four seconds, hold for seven seconds, 
                                 then breathe out for eight seconds. Repeat this process four times. We recommend listening to relaxing music as you preform this
                                 exercise.
+                            </span>
+                        </div>
+                    </Col>
+                </Row>
+
+                <Row>
+                    <Col>
+                        <div className="gamecontainer" onClick={() => launchGame(2)}>
+                            <h3>Guess the Quote</h3>
+                            <hr></hr>
+                            <span>
+                                Find your highscore by guessing the author of inspirational, peaceful, and mental health oriented quotes.
+                                Still in beta. 
                             </span>
                         </div>
                     </Col>
