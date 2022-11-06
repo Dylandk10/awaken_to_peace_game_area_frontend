@@ -8,7 +8,7 @@ const ResponsiveAppBar = (prop) => {
         <Navbar bg="dark" expand="lg" variant="dark" fixed="top" collapseOnSelect>
             <Container>
                 <a href="https://awakentopeace.org" id="homeButton">
-                    <Navbar.Brand>Awaken To Peace</Navbar.Brand>
+                    <Navbar.Brand>Home</Navbar.Brand>
                 </a>
             
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />

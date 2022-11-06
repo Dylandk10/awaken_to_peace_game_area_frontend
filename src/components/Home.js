@@ -61,9 +61,10 @@ const Home = (prop) => {
                             <h3>Guess the Quote</h3>
                             <hr></hr>
                             <span>
-                                Find your highscore by guessing the author of inspirational, peaceful, and mental health oriented quotes.
-                                Still in beta. 
+                                Find your highscore by guessing the author of inspirational, peaceful, and mental health oriented quotes. 
                             </span>
+                            <br />
+                            <span><strong>Beta Release</strong></span>
                         </div>
                     </Col>
                 </Row>
